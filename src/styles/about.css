@@ -1,0 +1,220 @@
+.ab-page {
+  background: #060509;
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif;
+}
+
+/* Nav */
+.ab-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+}
+
+.ab-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ab-logo-icon {
+  position: relative;
+  width: 30px;
+  height: 22px;
+  flex-shrink: 0;
+}
+.ab-logo-icon span {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top: 3px;
+}
+.ab-logo-icon span:first-child { background: #e63946; left: 0; }
+.ab-logo-icon span:last-child { background: #52b788; left: 12px; }
+
+.ab-logo-text {
+  font-size: 12px;
+  line-height: 1.35;
+}
+.ab-logo-text strong { display: block; font-weight: 700; }
+.ab-logo-text span { color: #a3a3ab; font-size: 10px; letter-spacing: 0.04em; }
+
+.ab-nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ab-nav-links a {
+  color: #d4d4d8;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.ab-nav-links a.active { color: #4d9fff; }
+.ab-nav-links a:hover { color: #ffffff; }
+
+.ab-nav-cta {
+  border: none;
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(90deg, #ff4d6d, #ff7a52);
+  cursor: pointer;
+}
+.ab-nav-cta:hover { opacity: 0.9; }
+
+/* Hero */
+.ab-hero {
+  position: relative;
+  min-height: 340px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.ab-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.ab-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(6,5,9,0.15), rgba(6,5,9,0.85));
+  z-index: 1;
+}
+
+.ab-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 32px 40px;
+  max-width: 460px;
+}
+
+.ab-hero-content h2 {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0 0 10px;
+}
+
+.ab-hero-content p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #e4e2e8;
+  margin: 0 0 20px;
+}
+
+.ab-hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ab-btn-primary {
+  border: none;
+  border-radius: 999px;
+  padding: 11px 20px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(90deg, #ff4d6d, #ff7a52);
+  cursor: pointer;
+}
+.ab-btn-primary:hover { opacity: 0.9; }
+
+.ab-btn-secondary {
+  border: none;
+  border-radius: 999px;
+  padding: 11px 20px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #0a0810;
+  background: #ffffff;
+  cursor: pointer;
+}
+.ab-btn-secondary:hover { opacity: 0.9; }
+
+/* Eyebrow */
+.ab-eyebrow {
+  display: inline-block;
+  border: 1px solid #34313d;
+  border-radius: 999px;
+  padding: 5px 14px;
+  font-size: 11px;
+  color: #d4d4d8;
+  margin-bottom: 16px;
+}
+
+/* Story */
+.ab-story {
+  margin: 40px 40px 0;
+  background: #100e15;
+  border: 1px solid #201d27;
+  border-radius: 16px;
+  padding: 28px;
+}
+
+.ab-story p {
+  color: #b4b2bc;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0 0 14px;
+  max-width: 720px;
+}
+
+.ab-story-image {
+  margin-top: 18px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ab-story-image img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Section */
+.ab-section {
+  margin: 40px 40px 40px;
+  border-top: 1px solid #201d27;
+  padding-top: 30px;
+}
+
+.ab-section p {
+  color: #b4b2bc;
+  font-size: 13px;
+  line-height: 1.7;
+  max-width: 640px;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  .ab-nav-links { display: none; }
+}
+
+@media (max-width: 700px) {
+  .ab-nav { padding: 16px 20px; }
+  .ab-hero-content { padding: 24px 20px; max-width: 100%; }
+  .ab-story { margin: 30px 16px 0; padding: 20px; }
+  .ab-section { margin: 30px 16px 30px; }
+  .ab-story-image img { height: 220px; }
+}
+
+@media (max-width: 600px) {
+  .ab-hero-content h2 { font-size: 19px; }
+}
