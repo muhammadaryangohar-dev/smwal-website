@@ -90,7 +90,7 @@ export default function Events() {
   };
 
  const handleGoHome = () => {
-  navigate("/");
+  navigate("/home");
 };
   return (
     <div className="ev-page">
