@@ -5,9 +5,8 @@ import loginPhoto from "../../assets/images/auth/login-photo.png";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-// Hardcoded demo credentials — replace with real auth later
-const DEMO_EMAIL = "test@example.com";
-const DEMO_PASSWORD = "password123";
+const DEMO_EMAIL = "aryan@example.com";
+const DEMO_PASSWORD = "messi123";
 
 function MailIcon() {
   return (
