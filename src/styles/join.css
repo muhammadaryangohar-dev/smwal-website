@@ -1,0 +1,967 @@
+.jn-page {
+
+  background: #060509;
+
+  min-height: 100vh;
+
+  color: #ffffff;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif;
+
+}
+
+.jn-nav {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 18px 40px;
+
+}
+
+.jn-logo {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+}
+
+.jn-logo-icon {
+
+  position: relative;
+
+  width: 30px;
+
+  height: 22px;
+
+  flex-shrink: 0;
+
+}
+
+.jn-logo-icon span {
+
+  position: absolute;
+
+  width: 16px;
+
+  height: 16px;
+
+  border-radius: 50%;
+
+  top: 3px;
+
+}
+
+.jn-logo-icon span:first-child { background: #e63946; left: 0; }
+
+.jn-logo-icon span:last-child { background: #52b788; left: 12px; }
+
+.jn-logo-text {
+
+  font-size: 12px;
+
+  line-height: 1.35;
+
+}
+
+.jn-logo-text strong { display: block; font-weight: 700; }
+
+.jn-logo-text span { color: #a3a3ab; font-size: 10px; letter-spacing: 0.04em; }
+
+.jn-nav-links {
+
+  display: flex;
+
+  gap: 32px;
+
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+.jn-nav-links a {
+
+  color: #d4d4d8;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.02em;
+
+}
+
+.jn-nav-links a.active { color: #4d9fff; }
+
+.jn-nav-links a:hover { color: #ffffff; }
+
+.jn-nav-cta {
+
+  border: none;
+
+  border-radius: 999px;
+
+  padding: 10px 22px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  color: #ffffff;
+
+  background: linear-gradient(90deg, #ff4d6d, #ff7a52);
+
+  cursor: pointer;
+
+}
+
+.jn-nav-cta:hover { opacity: 0.9; }
+
+.jn-hero {
+
+  width: 100%;
+
+  height: 620px;
+
+  overflow: hidden;
+
+}
+
+.jn-hero img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+}
+
+.jn-why-section {
+
+  margin: 34px 20px 0;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 28px;
+
+  align-items: stretch;
+
+}
+
+.jn-eyebrow {
+
+  display: inline-block;
+
+  border: 1px solid #34313d;
+
+  border-radius: 999px;
+
+  padding: 5px 14px;
+
+  font-size: 11px;
+
+  color: #d4d4d8;
+
+  margin-bottom: 20px;
+
+}
+
+.jn-why-image {
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  background: #100e15;
+
+  height: 100%;
+
+  min-height: 412px;
+
+}
+
+.jn-why-image img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+}
+
+.jn-why-list {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+
+}
+
+.jn-why-card {
+
+  display: flex;
+
+  gap: 28px;
+
+  align-items: flex-start;
+
+  background: #100e15;
+
+  border: 12px solid #201d27;
+
+  border-radius: 34px;
+
+  padding: 18px 20px;
+
+}
+
+.jn-why-number {
+
+  width: 28px;
+
+  height: 28px;
+
+  border-radius: 8px;
+
+  background: #f5a623;
+
+  color: #1a1200;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+}
+
+.jn-why-body h3 {
+
+  font-size: 14.5px;
+
+  font-weight: 700;
+
+  margin: 0 0 6px;
+
+}
+
+.jn-why-body p {
+
+  color: #a3a3ab;
+
+  font-size: 12.5px;
+
+  line-height: 1.6;
+
+  margin: 0;
+
+}
+
+.jn-section {
+
+  margin: 50px 40px 0;
+
+  border-top: 1px solid #201d27;
+
+  padding-top: 40px;
+
+}
+
+.jn-section-title {
+
+  font-size: 24px;
+
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  margin: 0 0 10px;
+
+}
+
+.jn-section-subtitle {
+
+  color: #a3a3ab;
+
+  font-size: 13px;
+
+  margin: 0 0 28px;
+
+}
+
+.jn-pricing-toggle {
+
+  display: flex;
+
+  justify-content: center;
+
+  margin-bottom: 32px;
+
+}
+
+.jn-toggle-group {
+
+  display: inline-flex;
+
+  border: 1px solid #34313d;
+
+  border-radius: 999px;
+
+  padding: 4px;
+
+  gap: 4px;
+
+}
+
+.jn-toggle-btn {
+
+  border: none;
+
+  border-radius: 999px;
+
+  padding: 8px 18px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  color: #b4b2bc;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+}
+
+.jn-toggle-btn.active {
+
+  background: #ffffff;
+
+  color: #0a0810;
+
+}
+
+.jn-toggle-save {
+
+  background: #14532d;
+
+  color: #4ade80;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  padding: 2px 7px;
+
+  border-radius: 999px;
+
+}
+
+.jn-pricing-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+  gap: 20px;
+
+  align-items: start;
+
+}
+
+.jn-price-card {
+
+  position: relative;
+
+  background: #100e15;
+
+  border: 1px solid #201d27;
+
+  border-radius: 16px;
+
+  padding: 22px;
+
+}
+
+.jn-price-card.featured {
+
+  border: 2px solid #ec5ca6;
+
+  padding-top: 30px;
+
+}
+
+.jn-best-deal {
+
+  position: absolute;
+
+  top: -13px;
+
+  left: 22px;
+
+  background: linear-gradient(90deg, #ec5ca6, #ff7a52);
+
+  color: #2a0f1c;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  padding: 5px 12px;
+
+  border-radius: 999px;
+
+}
+
+.jn-price-badge {
+
+  position: absolute;
+
+  top: 18px;
+
+  right: 18px;
+
+  background: #14532d;
+
+  color: #4ade80;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  padding: 3px 9px;
+
+  border-radius: 999px;
+
+}
+
+.jn-price-card.featured .jn-price-badge { top: 30px; }
+
+.jn-price-title {
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  margin: 0 0 8px;
+
+}
+
+.jn-price-desc {
+
+  color: #a3a3ab;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+
+  margin: 0 0 18px;
+
+  min-height: 52px;
+
+}
+
+.jn-price-amount {
+
+  font-size: 26px;
+
+  font-weight: 800;
+
+  margin: 0 0 18px;
+
+}
+
+.jn-price-amount span {
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  color: #a3a3ab;
+
+}
+
+.jn-price-benefits-label {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #a3a3ab;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.06em;
+
+  margin-bottom: 14px;
+
+}
+
+.jn-price-benefits-label::after {
+
+  content: "";
+
+  flex: 1;
+
+  height: 1px;
+
+  background: #201d27;
+
+}
+
+.jn-price-list {
+
+  list-style: none;
+
+  margin: 0 0 22px;
+
+  padding: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+}
+
+.jn-price-list li {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  font-size: 12.5px;
+
+  color: #e8e8ea;
+
+}
+
+.jn-price-list li.muted { color: #6f6f78; }
+
+.jn-price-icon {
+
+  width: 13px;
+
+  height: 13px;
+
+  flex-shrink: 0;
+
+  border-radius: 3px;
+
+  background: #f5a623;
+
+}
+
+.jn-price-list li.muted .jn-price-icon {
+
+  background: transparent;
+
+  border: 1px solid #3a3742;
+
+}
+
+.jn-price-btn {
+
+  width: 100%;
+
+  border-radius: 10px;
+
+  padding: 12px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  border: 1px solid #34313d;
+
+  background: #17151d;
+
+  color: #ffffff;
+
+}
+
+.jn-price-btn:hover { background: #201d27; }
+
+.jn-price-btn.primary {
+
+  border: none;
+
+  background: linear-gradient(90deg, #2d67ff, #4d9fff);
+
+}
+
+.jn-price-btn.primary:hover { opacity: 0.9; }
+
+.jn-cta {
+
+  position: relative;
+
+  margin: 50px 40px 0;
+
+  border-radius: 50px;
+
+  overflow: hidden;
+
+  min-height: 340px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 60px 24px;
+
+}
+
+.jn-cta-bg {
+
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+
+  height: 110%;
+
+  object-fit: cover;
+
+  z-index: 0;
+
+}
+
+.jn-cta::after {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(180deg, rgba(10,8,16,0.25), rgba(10,8,16,0.8));
+
+  z-index: 1;
+
+}
+
+.jn-cta-content {
+
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 520px;
+
+}
+
+.jn-cta-content h2 {
+
+  font-size: 28px;
+
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  margin: 0 0 14px;
+
+}
+
+.jn-cta-content p {
+
+  font-size: 13px;
+
+  color: #e4e2e8;
+
+  line-height: 1.7;
+
+  margin: 0 0 24px;
+
+}
+
+.jn-cta-buttons {
+
+  display: flex;
+
+  gap: 12px;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 22px;
+
+}
+
+.jn-btn-cta-primary {
+
+  border: none;
+
+  border-radius: 10px;
+
+  padding: 12px 22px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  color: #ffffff;
+
+  background: linear-gradient(90deg, #ec5ca6, #ff7a52);
+
+  cursor: pointer;
+
+}
+
+.jn-btn-cta-primary:hover { opacity: 0.9; }
+
+.jn-btn-cta-secondary {
+
+  border: none;
+
+  border-radius: 10px;
+
+  padding: 12px 22px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  color: #0a0810;
+
+  background: #ffffff;
+
+  cursor: pointer;
+
+}
+
+.jn-btn-cta-secondary:hover { opacity: 0.9; }
+
+.jn-store-badges {
+
+  display: flex;
+
+  gap: 10px;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+}
+
+.jn-store-badge {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  border: 1px solid rgba(255,255,255,0.25);
+
+  border-radius: 8px;
+
+  padding: 7px 12px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  background: rgba(0,0,0,0.25);
+
+}
+
+.jn-store-badge-text { line-height: 1.2; }
+
+.jn-store-badge-text small { display: block; font-size: 8px; color: #d4d4d8; }
+
+.jn-store-badge-text span { font-size: 11px; font-weight: 700; }
+
+.jn-footer {
+
+  margin: 50px 40px 0;
+
+  border-top: 1px solid #201d27;
+
+  padding: 26px 0 0;
+
+}
+
+.jn-footer-links {
+
+  display: flex;
+
+  gap: 24px;
+
+  list-style: none;
+
+  margin: 0 0 24px;
+
+  padding: 0;
+
+  flex-wrap: wrap;
+
+}
+
+.jn-footer-links a {
+
+  color: #d4d4d8;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+}
+
+.jn-footer-links a:hover { color: #ffffff; }
+
+.jn-footer-bottom {
+
+  border-top: 1px solid #201d27;
+
+  padding: 18px 0 28px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+}
+
+.jn-footer-copyright {
+
+  color: #6f6f78;
+
+  font-size: 11.5px;
+
+}
+
+.jn-footer-socials {
+
+  display: flex;
+
+  gap: 12px;
+
+}
+
+.jn-footer-socials a {
+
+  width: 30px;
+
+  height: 30px;
+
+  border-radius: 8px;
+
+  background: #17151d;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+}
+
+.jn-footer-socials a:hover { background: #201d27; }
+
+@media (max-width: 860px) {
+
+  .jn-nav-links { display: none; }
+
+}
+
+@media (max-width: 800px) {
+
+  .jn-why-section { 
+
+    grid-template-columns: 1fr; 
+
+  }
+
+  .jn-why-image { 
+
+    max-height: 320px;
+
+    min-height: 0;
+
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .jn-nav { padding: 16px 20px; }
+
+  .jn-hero { height: 320px; }
+
+  .jn-why-section { 
+
+    margin: 36px 16px 0; 
+
+    gap: 24px; 
+
+  }
+
+  .jn-section { margin: 36px 16px 0; }
+
+  .jn-cta { margin: 36px 16px 0; padding: 44px 18px; min-height: 280px; }
+
+  .jn-cta-content h2 { font-size: 22px; }
+
+  .jn-footer { margin: 36px 16px 0; }
+
+}

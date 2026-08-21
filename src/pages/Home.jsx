@@ -165,7 +165,9 @@ export default function Home() {
           <li><a href="/about">About</a></li>
           <li><a href="/join">Join Us</a></li>
           <li><a href="/donations">Donations</a></li>
+          <li><a href="/events">Events</a></li>
           <li><a href="/contact">Contact Us</a></li>
+          
         </ul>
 
         <button className="hm-nav-cta">Download App</button>
@@ -415,6 +417,7 @@ export default function Home() {
           <li><a href="/about">About</a></li>
           <li><a href="/join">Join Us</a></li>
           <li><a href="/donations">Donations</a></li>
+          <li><a href="/events">Events</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
 
