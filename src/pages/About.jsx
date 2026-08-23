@@ -4,6 +4,7 @@ import aboutGroup from "../assets/images/about/about-group.png";
 import teamMax from "../assets/images/about/team-max.png";
 import teamElla from "../assets/images/about/team-ella.png";
 import teamOliver from "../assets/images/about/team-oliver.png";
+import teamHarry from "../assets/images/about/team-harry.png";
 import impactWedding from "../assets/images/about/impact-wedding.png";
 import experienceCouple from "../assets/images/about/experience-couple.png";
 
@@ -11,6 +12,7 @@ const team = [
   { img: teamMax, name: "Max Hunter", role: "Founder & Vision Lead", email: "Max@smwal.com" },
   { img: teamElla, name: "Ella Hunter-Ross", role: "Community & Partnerships", email: "Ella@smwal.com" },
   { img: teamOliver, name: "Oliver Hunter", role: "Platform & Experience", email: "Oliver@smwal.com" },
+  { img: teamHarry, name: "Harry Bennett", role: "Mentorship & Growth", email: "Harry@smwal.com" },
 ];
 
 const stats = [
@@ -21,21 +23,9 @@ const stats = [
 ];
 
 const features = [
-  {
-    title: "Mentor-supported journey",
-    body: "Get guidance from mentors and support to help you grow and prepare for a lasting marriage.",
-    icon: "book",
-  },
-  {
-    title: "Structured matchmaking",
-    body: "Our matchmaking focuses on compatibility and values, helping you connect with clarity and purpose.",
-    icon: "person",
-  },
-  {
-    title: "Faith-aligned environment",
-    body: "Engage in a respectful space where connections are nurtured through shared beliefs and community support.",
-    icon: "spark",
-  },
+  { title: "Mentor-supported journey", body: "Get guidance from mentors and support to help you grow and prepare for a lasting marriage.", icon: "book" },
+  { title: "Structured matchmaking", body: "Our matchmaking focuses on compatibility and values, helping you connect with clarity and purpose.", icon: "person" },
+  { title: "Faith-aligned environment", body: "Engage in a respectful space where connections are nurtured through shared beliefs and community support.", icon: "spark" },
 ];
 
 function MailIcon() {
@@ -46,7 +36,6 @@ function MailIcon() {
     </svg>
   );
 }
-
 function BookIcon() {
   return (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -55,7 +44,6 @@ function BookIcon() {
     </svg>
   );
 }
-
 function PersonIcon() {
   return (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -64,7 +52,6 @@ function PersonIcon() {
     </svg>
   );
 }
-
 function SparkIcon() {
   return (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -74,44 +61,32 @@ function SparkIcon() {
     </svg>
   );
 }
-
 function FeatureIcon({ type }) {
   if (type === "book") return <BookIcon />;
   if (type === "spark") return <SparkIcon />;
   return <PersonIcon />;
 }
-
 function YoutubeIcon() {
-  return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.5V8.5L15.8 12Z" />
-    </svg>
-  );
+  return <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.5V8.5L15.8 12Z" /></svg>;
 }
-
 function FacebookIcon() {
-  return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z" />
-    </svg>
-  );
+  return <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z" /></svg>;
 }
-
 function InstagramIcon() {
-  return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <rect x="2" y="2" width="20" height="20" rx="5" />
-      <circle cx="12" cy="12" r="4" />
-      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
-    </svg>
-  );
+  return <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>;
+}
+function TiktokIcon() {
+  return <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.8a4.6 4.6 0 0 1-3.8-4.3H9.7v14.3a2.7 2.7 0 1 1-2.7-2.7c.3 0 .5 0 .8.1v-3a5.7 5.7 0 1 0 4.9 5.6V9.5a7.6 7.6 0 0 0 4 1.1V7.5a4.6 4.6 0 0 1-.1-1.7Z" /></svg>;
 }
 
-function TiktokIcon() {
+function RingsDivider() {
   return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M16.6 5.8a4.6 4.6 0 0 1-3.8-4.3H9.7v14.3a2.7 2.7 0 1 1-2.7-2.7c.3 0 .5 0 .8.1v-3a5.7 5.7 0 1 0 4.9 5.6V9.5a7.6 7.6 0 0 0 4 1.1V7.5a4.6 4.6 0 0 1-.1-1.7Z" />
-    </svg>
+    <div className="ab-rings-divider" aria-hidden="true">
+      <svg width="44" height="24" viewBox="0 0 44 24">
+        <circle cx="16" cy="12" r="9" />
+        <circle cx="28" cy="12" r="9" />
+      </svg>
+    </div>
   );
 }
 
@@ -122,7 +97,7 @@ export default function About() {
         <div className="ab-logo">
           <span className="ab-logo-icon"><span></span><span></span></span>
           <div className="ab-logo-text">
-            <strong>Single & Married</strong>
+            <strong>Single &amp; Married</strong>
             <span>WITH A LIFE</span>
           </div>
         </div>
@@ -133,8 +108,8 @@ export default function About() {
           <li><a href="/join">Join Us</a></li>
           <li><a href="/donations">Donations</a></li>
           <li><a href="/events">Events</a></li>
+          <li><a href="/learn">Learn</a></li>
           <li><a href="/contact">Contact Us</a></li>
-           
         </ul>
 
         <button className="ab-nav-cta">Download App</button>
@@ -144,7 +119,8 @@ export default function About() {
         <img className="ab-hero-bg" src={aboutHero} alt="" />
         <div className="ab-hero-overlay"></div>
         <div className="ab-hero-content">
-          <h2>About SMWAL</h2>
+          <span className="ab-eyebrow">About SMWAL</span>
+          <h1>Building marriages with intention, not chance.</h1>
           <p>
             A mission-driven platform dedicated to helping individuals build meaningful,
             guided, and faith-centered marriages through mentorship, education, and
@@ -156,6 +132,8 @@ export default function About() {
           </div>
         </div>
       </div>
+
+      <RingsDivider />
 
       <div className="ab-story">
         <span className="ab-eyebrow">Our Story</span>
@@ -200,10 +178,13 @@ export default function About() {
         </div>
       </div>
 
+      <RingsDivider />
+
       <div className="ab-impact">
         <span className="ab-eyebrow">Community Impact</span>
-        <div className="ab-impact-image">
+        <div className="ab-impact-image" style={{ marginTop: 16 }}>
           <img src={impactWedding} alt="A couple's wedding, part of the SMWAL community" />
+          <p className="ab-impact-caption">Over 800 couples have married through the SMWAL community.</p>
         </div>
       </div>
 
@@ -250,11 +231,12 @@ export default function About() {
           <li><a href="/join">Join Us</a></li>
           <li><a href="/donations">Donations</a></li>
           <li><a href="/events">Events</a></li>
-          <li><a href="/contact">Contact</a></li>
+            <li><a href="/learn">Learn</a></li>
+          <li><a href="/contact">Contact Us</a></li>
         </ul>
 
         <div className="ab-footer-bottom">
-          <span className="ab-footer-copyright">© 2021 All Rights Reserved</span>
+          <span className="ab-footer-copyright">© 2026 All Rights Reserved</span>
           <div className="ab-footer-socials">
             <a href="#" aria-label="YouTube"><YoutubeIcon /></a>
             <a href="#" aria-label="Facebook"><FacebookIcon /></a>

@@ -134,6 +134,7 @@ export default function JoinUs() {
           <li><a href="/join" className="active">Join Us</a></li>
           <li><a href="/donations">Donations</a></li>
           <li><a href="/events">Events</a></li>
+          <li><a href="/learn">Learn</a></li>
           <li><a href="/contact">Contact Us</a></li>
         </ul>
 
@@ -142,6 +143,20 @@ export default function JoinUs() {
 
       <div className="jn-hero">
         <img src={joinHero} alt="Members of the SMWAL community" />
+
+        {/* NEW: hero overlay copy */}
+        <div className="jn-hero-content">
+          <span className="jn-hero-eyebrow">Faith-Centered Matchmaking</span>
+          <h1>Find Real Love, <span>Rooted In Faith</span></h1>
+          <p>
+            Join a community built on intentional connection, mentorship, and shared
+            values — guiding you toward a lifelong, faith-filled partnership.
+          </p>
+          <div className="jn-hero-buttons">
+            <button className="jn-hero-btn-primary">Join the Community</button>
+            <button className="jn-hero-btn-secondary">Learn More</button>
+          </div>
+        </div>
       </div>
 
       <div className="jn-why-section">
@@ -253,11 +268,12 @@ export default function JoinUs() {
           <li><a href="/join">Join Us</a></li>
           <li><a href="/donations">Donations</a></li>
           <li><a href="/events">Events</a></li>
+            <li><a href="/learn">Learn</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
 
         <div className="jn-footer-bottom">
-          <span className="jn-footer-copyright">© 2021 All Rights Reserved</span>
+          <span className="jn-footer-copyright">© 2026 All Rights Reserved</span>
           <div className="jn-footer-socials">
             <a href="#" aria-label="YouTube"><YoutubeIcon /></a>
             <a href="#" aria-label="Facebook"><FacebookIcon /></a>

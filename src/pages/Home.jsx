@@ -166,6 +166,7 @@ export default function Home() {
           <li><a href="/join">Join Us</a></li>
           <li><a href="/donations">Donations</a></li>
           <li><a href="/events">Events</a></li>
+          <li><a href="/learn">Learn</a></li>
           <li><a href="/contact">Contact Us</a></li>
           
         </ul>
@@ -189,7 +190,9 @@ export default function Home() {
             </div>
             <div className="hm-store-badges">
               <a href="#" className="hm-store-badge">
+            
                 <div className="hm-store-badge-text">
+
                   <small>GET IT ON</small>
                   <span>Google Play</span>
                 </div>
@@ -418,7 +421,8 @@ export default function Home() {
           <li><a href="/join">Join Us</a></li>
           <li><a href="/donations">Donations</a></li>
           <li><a href="/events">Events</a></li>
-          <li><a href="/contact">Contact</a></li>
+           <li><a href="/learn">Learn</a></li>
+          <li><a href="/contact">Contact Us</a></li>
         </ul>
 
         <div className="hm-footer-newsletter">
@@ -438,7 +442,7 @@ export default function Home() {
       </div>
 
       <div className="hm-footer-bottom">
-        <span className="hm-footer-copyright">© 2021 All Rights Reserved</span>
+        <span className="hm-footer-copyright">© 2026 All Rights Reserved</span>
         <div className="hm-footer-socials">
           <a href="#" aria-label="YouTube">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">

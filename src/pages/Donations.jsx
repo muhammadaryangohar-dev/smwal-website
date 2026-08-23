@@ -81,6 +81,7 @@ export default function Donations() {
           <li><a href="/join">Join Us</a></li>
           <li><a href="/donations" className="active">Donations</a></li>
           <li><a href="/events">Events</a></li>
+           <li><a href="/learn">Learn</a></li>
           <li><a href="/contact">Contact Us</a></li>
            
         </ul>
@@ -173,10 +174,11 @@ export default function Donations() {
           <li><a href="/join">Join Us</a></li>
           <li><a href="/donations">Donations</a></li>
           <li><a href="/events">Events</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="/learn">Learn</a></li>
+          <li><a href="/contact">Contact Us</a></li>
         </ul>
         <div className="dn-footer-bottom">
-          <span className="dn-footer-copyright">© 2021 All Rights Reserved</span>
+          <span className="dn-footer-copyright">© 2026 All Rights Reserved</span>
           <div className="dn-footer-socials">
             <a href="#" aria-label="YouTube">▶</a>
             <a href="#" aria-label="Facebook">f</a>

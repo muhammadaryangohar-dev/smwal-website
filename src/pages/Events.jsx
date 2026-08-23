@@ -14,7 +14,7 @@ const events = [
     meta: "Sat, Oct 26 · 1:00 PM · Greenfield Farm",
     image: communityHangout,
     description: "A guided in-person gathering organized by the ministry.",
-    date: "Saturday, October 26, 2025",
+    date: "Saturday, September 26, 2026",
     time: "Start: 1:00 PM | End: 6:00 PM",
     location: "Greenfield Farm",
     fee: "$15",
@@ -33,7 +33,7 @@ const events = [
     meta: "Sun, Oct 27 · 10:00 AM · City Gallery",
     image: artWorkshop,
     description: "A guided in-person gathering organized by the ministry.",
-    date: "Sunday, October 27, 2025",
+    date: "Sunday, October 27, 2026",
     time: "Start: 10:00 AM | End: 1:00 PM",
     location: "City Gallery",
     fee: "$20",
@@ -52,7 +52,7 @@ const events = [
     meta: "Fri, Nov 1 · 5:00 PM · Riverside Park",
     image: foodFestival,
     description: "A guided in-person gathering organized by the ministry.",
-    date: "Friday, November 1, 2025",
+    date: "Friday, November 1, 2026",
     time: "Start: 5:00 PM | End: 9:00 PM",
     location: "Riverside Park",
     fee: "$32",
@@ -66,7 +66,6 @@ const events = [
   },
 ];
 
-// view: "list" | "detail" | "confirmation"
 export default function Events() {
   const [view, setView] = useState("list");
   const [activeEvent, setActiveEvent] = useState(null);
@@ -107,8 +106,9 @@ export default function Events() {
           <li><a href="/">Home</a></li>
           <li><a href="/about">About Us</a></li>
           <li><a href="/join">Join Us</a></li>
-          <li><a href="/donations">Donate Us</a></li>
+          <li><a href="/donations">Donations</a></li>
           <li><a href="/events" className="active">Events</a></li>
+          <li><a href="/learn">Learn</a></li>
           <li><a href="/contact">Contact Us</a></li>
         </ul>
 
@@ -204,7 +204,8 @@ export default function Events() {
             <li><a href="/join">Join Us</a></li>
             <li><a href="/donations">Donations</a></li>
             <li><a href="/events">Events</a></li>
-            <li><a href="/contact">Contact</a></li>
+              <li><a href="/learn">Learn</a></li>
+            <li><a href="/contact">Contact Us</a></li>
           </ul>
 
           <div className="ev-footer-subscribe">
@@ -223,7 +224,7 @@ export default function Events() {
         </div>
 
         <div className="ev-footer-bottom">
-          <span className="ev-footer-copyright">© 2021 All Rights Reserved</span>
+          <span className="ev-footer-copyright">© 2026 All Rights Reserved</span>
 
           <div className="ev-footer-socials">
             <a href="#" aria-label="YouTube">▶</a>
