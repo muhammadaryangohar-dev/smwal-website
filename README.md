@@ -14,6 +14,7 @@ This project provides a modern and responsive website where visitors can learn a
 - Join Us page
 - Donations page
 - Upcoming Events page
+- Learn page
 - Contact Us page
 - Login page
 - Navigation between different pages
